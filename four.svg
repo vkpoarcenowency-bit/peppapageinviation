@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" width="420" height="520" role="img" aria-label="4">
+  <defs>
+    <linearGradient id="pinkFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFC7DE"/>
+      <stop offset="48%" stop-color="#FB88B8"/>
+      <stop offset="100%" stop-color="#E85C97"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".55"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <g stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- drop shadow, offset down like the wordmark -->
+    <path d="M300 62
+             L300 470
+             C300 486 312 496 328 496
+             L372 496
+             C388 496 400 486 400 470
+             L400 448
+             L120 448
+             C104 448 92 438 92 422
+             C92 408 100 396 116 380
+             L300 172 Z"
+          transform="translate(0,14)" fill="#B94268" opacity=".42"/>
+
+    <!-- the 4: vertical stem, angled diagonal, wide crossbar -->
+    <path d="M300 62
+             L300 470
+             C300 486 312 496 328 496
+             L372 496
+             C388 496 400 486 400 470
+             L400 448
+             L120 448
+             C104 448 92 438 92 422
+             C92 408 100 396 116 380
+             L300 172 Z"
+          fill="url(#pinkFill)" stroke="#B94268" stroke-width="13"/>
+
+    <!-- inner gloss so the shape reads inflated, not flat -->
+    <path d="M296 84 L296 452 L128 452 C118 452 112 446 112 436 C112 428 116 420 124 410 L296 194 Z"
+          fill="url(#gloss)" opacity=".5"/>
+
+    <!-- dots echoing the polka-dot dress, on the crossbar -->
+    <g fill="#D4497F" opacity=".5">
+      <circle cx="170" cy="470" r="9"/>
+      <circle cx="225" cy="470" r="9"/>
+      <circle cx="280" cy="470" r="9"/>
+      <circle cx="335" cy="470" r="9"/>
+    </g>
+
+    <!-- a little pig snout sitting in the counter (the enclosed triangle of the 4) -->
+    <g transform="translate(196,262)">
+      <ellipse cx="0" cy="0" rx="42" ry="33" fill="#F47FA6" stroke="#C74971" stroke-width="7"/>
+      <ellipse cx="-14" cy="0" rx="6.5" ry="12" fill="#C74971"/>
+      <ellipse cx="14" cy="0" rx="6.5" ry="12" fill="#C74971"/>
+      <ellipse cx="-26" cy="-16" rx="9" ry="2" fill="#F8A6C2" opacity=".85"/>
+    </g>
+
+    <!-- highlight glint on the stem -->
+    <ellipse cx="278" cy="150" rx="9" ry="34" fill="#fff" opacity=".4" transform="rotate(-6 278 150)"/>
+  </g>
+</svg>
